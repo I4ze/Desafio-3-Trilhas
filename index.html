@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <head></head>
+    <main class="page_layout">
+        <section class="form_section">
+            <div class="header_interno">
+                <a href="" class="botao_voltar">
+                    <img src="./assets/back_arrow.png" alt="" class="arrow_back">
+                    Voltar
+                </a>
+                <h1>Formulário de inscrição</h1>
+                <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+            </div>
+            <div>
+                <form action="" method="" class="form_informacoes_participante">
+                    <h4>Informações do participante</h2>
+                        <div class="form_group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="data_nascimento">Data de nascimento</label>
+                            <input type="date" id="data_nascimento" name="data_nascimento" required>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00"
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo" name="sexo" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(99) 9 9999-9999"
+                                pattern="\(\d{2}\) \d \d{4}-\d{4}" required>
+                        </div>
+
+
+                        <div class="form_group">
+                            <label for="">Documento de identidade</label>
+                            <div class="upload-container">
+                                <label for="file-upload" class="upload-label">
+                                    <img src="./assets/upload.png" alt="símbolo de upload na nuvem">
+                                    <p>Clique aqui para selecionar o arquivo</p>
+                                    <input type="file" id="file-upload" class="upload-input">
+                            </div>
+                        </div>
+
+                        <h4>Endereço residencial</h4>
+
+                        <div class="form_group">
+                            <label for="cep">CEP</label>
+                            <input type="" id="cep" name="cep" placeholder="99999-999" pattern="" required>
+                        </div>
+
+                        <div class="campo-duplo">
+                            <div class="form_group_1">
+                                <label for="Rua">Rua</label>
+                                <input type="" id="Rua" name="rua" placeholder="Rua 1" pattern="" required>
+                            </div>
+
+                            <div class="form_group_2">
+                                <label for="numero">Numero</label>
+                                <input type="" id="numero" name="numero" placeholder="10" pattern="" required>
+                            </div>
+                        </div>
+
+                        <div class="campo-duplo">
+                            <div class="form_group_1">
+                                <label for="cidade">Cidade</label>
+                                <input type="" id="cidade" name="cidade" placeholder="São Luís" pattern="" required>
+                            </div>
+
+                            <div class="form_group_2">
+                                <label for="estado">Estado</label>
+                                <input type="" id="estado" name="estado" placeholder="MA" pattern="" required>
+                            </div>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="">Comprovante de residência</label>
+                            <div class="upload-container">
+                                <label for="file-upload" class="upload-label">
+                                    <img src="./assets/upload.png" alt="símbolo de upload na nuvem">
+                                    <p>Clique aqui para selecionar o arquivo</p>
+                                    <input type="file" id="file-upload" class="upload-input">
+                            </div>
+                        </div>
+
+                        <h4>Trilhas de aprendizagem</h4>
+                        <p>Selecione apenas uma trilha</p>
+                        <div class="container">
+                            <label class="option">
+                                <input type="radio" name="trilha" value="frontend">
+                                <div class="option-content">
+                                    <img src="./assets/front.png" alt="Front-end">
+                                    <p>Programação Front-end</p>
+                                </div>
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="trilha" value="backend">
+                                <div class="option-content">
+                                    <img src="./assets/back.png" alt="Back-end">
+                                    <p>Programação Back-end</p>
+                                </div>
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="trilha" value="jogos">
+                                <div class="option-content">
+                                    <img src="./assets/jogos.png" alt="Jogos">
+                                    <p>Programação de Jogos</p>
+                                </div>
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="trilha" value="ux">
+                                <div class="option-content">
+                                    <img src="./assets/ux.png" alt="UX">
+                                    <p>Design e Experiência</p>
+                                </div>
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="trilha" value="dados">
+                                <div class="option-content">
+                                    <img src="./assets/dados.png" alt="Dados">
+                                    <p>Ciência de Dados</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="termos-container">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            <label for="termos">
+                                Declaro que li e concordo com os 
+                                <a href="#">Termos e Condições</a> e com a 
+                                <a href="#">Política de Privacidade</a>.
+                            </label>
+                        </div>
+                        
+                        <div class="botoes-container">
+                            <button class="botao cancelar">Cancelar</button>
+                            <button class="botao inscrever">Fazer inscrição</button>
+                        </div>
+                </form>
+            </div>
+
+
+        </section>
+
+        <div class="images_layout">
+            <img src="./assets/Ilustration.png" alt="Ilustração homem sentado em livros mexendo no computador" ,
+                class="ilustration">
+            <img src="./assets/Logo_trilhas_inova.png" alt="Logo programa trilhas" class="logo_trilhas">
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
