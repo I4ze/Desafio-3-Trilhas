@@ -136,6 +136,10 @@ h1 {
     width: 100%;
 }
 
+.form_group input:invalid{
+    border: 1px solid red;
+}
+
 .upload-container {
     display: flex;
     flex-direction: column;
@@ -170,6 +174,7 @@ h1 {
 .upload-input {
     display: none;
 }
+
 
 .campo-duplo {
     display: flex;

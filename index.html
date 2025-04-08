@@ -52,7 +52,8 @@
 
                         <div class="form_group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required
+                                autocomplete="email">
                         </div>
 
                         <div class="form_group">
@@ -61,14 +62,26 @@
                                 pattern="\(\d{2}\) \d \d{4}-\d{4}" required>
                         </div>
 
+                        <div class="form_group">
+                            <label for="id_usuario">Id de Usuário</label>
+                            <input type="text" id="id_usuario" name="telefone" required>
+                        </div>
 
                         <div class="form_group">
-                            <label for="">Documento de identidade</label>
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="telefone" placeholder="min. 8 digitos" required>
+                        </div>
+
+
+                        <div class="form_group">
+                            <label>Documento de identidade</label>
                             <div class="upload-container">
-                                <label for="file-upload" class="upload-label">
+                                <label for="file-identidade" class="upload-label">
                                     <img src="./assets/upload.png" alt="símbolo de upload na nuvem">
                                     <p>Clique aqui para selecionar o arquivo</p>
-                                    <input type="file" id="file-upload" class="upload-input">
+                                    <input type="file" id="file-identidade" class="upload-input" name="identidade">
+                                    <span id="erro-identidade" class="erro"></span>
+                                </label>
                             </div>
                         </div>
 
@@ -76,40 +89,43 @@
 
                         <div class="form_group">
                             <label for="cep">CEP</label>
-                            <input type="" id="cep" name="cep" placeholder="99999-999" pattern="" required>
+                            <input type="text" id="cep" name="cep" placeholder="99999-999" pattern="\d{5}-\d{3}"
+                                required>
                         </div>
 
                         <div class="campo-duplo">
                             <div class="form_group_1">
                                 <label for="Rua">Rua</label>
-                                <input type="" id="Rua" name="rua" placeholder="Rua 1" pattern="" required>
+                                <input type="text" id="Rua" name="rua" placeholder="Rua 1" required>
                             </div>
 
                             <div class="form_group_2">
                                 <label for="numero">Numero</label>
-                                <input type="" id="numero" name="numero" placeholder="10" pattern="" required>
+                                <input type="text" id="numero" name="numero" placeholder="10" required>
                             </div>
                         </div>
 
                         <div class="campo-duplo">
                             <div class="form_group_1">
                                 <label for="cidade">Cidade</label>
-                                <input type="" id="cidade" name="cidade" placeholder="São Luís" pattern="" required>
+                                <input type="text" id="cidade" name="cidade" placeholder="São Luís" required>
                             </div>
 
                             <div class="form_group_2">
                                 <label for="estado">Estado</label>
-                                <input type="" id="estado" name="estado" placeholder="MA" pattern="" required>
+                                <input type="text" id="estado" name="estado" placeholder="MA" required>
                             </div>
                         </div>
 
                         <div class="form_group">
-                            <label for="">Comprovante de residência</label>
+                            <label>Comprovante de residência</label>
                             <div class="upload-container">
-                                <label for="file-upload" class="upload-label">
+                                <label for="file-comprovante" class="upload-label">
                                     <img src="./assets/upload.png" alt="símbolo de upload na nuvem">
                                     <p>Clique aqui para selecionar o arquivo</p>
-                                    <input type="file" id="file-upload" class="upload-input">
+                                    <input type="file" id="file-comprovante" class="upload-input" name="comprovante">
+                                    <span id="erro-identidade" class="erro"></span>
+                                </label>
                             </div>
                         </div>
 
@@ -160,15 +176,16 @@
                         <div class="termos-container">
                             <input type="checkbox" id="termos" name="termos" required>
                             <label for="termos">
-                                Declaro que li e concordo com os 
-                                <a href="#">Termos e Condições</a> e com a 
+                                Declaro que li e concordo com os
+                                <a href="#">Termos e Condições</a> e com a
                                 <a href="#">Política de Privacidade</a>.
                             </label>
                         </div>
-                        
+
                         <div class="botoes-container">
                             <button class="botao cancelar">Cancelar</button>
-                            <button class="botao inscrever">Fazer inscrição</button>
+                            <button type="button" class="botao salvar" onclick="salvarDados()">Salvar dados</button>
+                            <button class="botao inscrever" onclick="validaForm(event)">Fazer inscrição</button>
                         </div>
                 </form>
             </div>
@@ -184,5 +201,7 @@
     </main>
     <footer></footer>
 </body>
+
+<script src="app.js"></script>
 
 </html>

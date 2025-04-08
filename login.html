@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <head></head>
+    <main class="page_layout">
+        <section class="form_section">
+            <a href="index.html" class="botao_voltar">
+                <img src="./assets/back_arrow.png" alt="" class="arrow_back">
+                Voltar
+            </a>
+            <div class="header_interno">
+                <h1>Entrar</h1>
+                <p>Preencha os dados abaixo para entrar no Programa Trilhas.</p>
+            </div>
+            <div>
+                <form action="" method="" class="form_informacoes_participante">
+                    <h4>Informações de login</h2>
+                        <div class="form_group">
+                            <label for="id_usuario">Id de Usuário</label>
+                            <input type="text" id="id_usuario" name="telefone" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="telefone" placeholder="min. 8 digitos" required>
+                        </div>
+                        <div class="botoes-container">
+                            <button class="botao inscrever" onclick="validaForm(event)">Login</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="images_layout">
+            <img src="./assets/Ilustration.png" alt="Ilustração homem sentado em livros mexendo no computador" ,
+                class="ilustration">
+            <img src="./assets/Logo_trilhas_inova.png" alt="Logo programa trilhas" class="logo_trilhas">
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+<script src="login.js"></script>
+
+</html>
