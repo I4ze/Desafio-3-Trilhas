@@ -40,6 +40,10 @@ h1 {
     color: var(--cor-fonte-primaria);
 }
 
+.header{
+    width: 50%;
+}
+
 .page_layout {
     display: flex;
     flex-direction: row;
@@ -52,10 +56,10 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 64px;
+    padding: 6%;
     height: 100vh;
     overflow-y: auto;
-    width: 656px;
+    width: 100%;
     align-content: center;
 }
 
@@ -65,7 +69,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 100vh;
     position: fixed;
     right: 0;
@@ -74,39 +78,37 @@ h1 {
 
 
 .logo_trilhas {
-    width: 212.25px;
-    height: 26.49;
+    width: 30%;
 }
 
 .ilustration {
-    width: 500px;
-    height: 500px;
+    width: 60%;
 }
 
 .botao_voltar {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 2%;
     color: var(--cor-terciária);
 }
 
 .arrow_back {
-    width: 24px;
-    height: 24px;
-    padding-right: 8px;
+    width: 2%;
+    height: 2%;
+    padding-right: 0.1%;
 }
 
 .header_interno {
-    padding-bottom: 48px;
+    padding-bottom: 5%;
 }
 
 .form_informacoes_participante {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    font-size: 14px;
-    max-width: 528px;
+    font-size: 90%;
+    max-width: 40%;
     width: 100%;
 }
 
@@ -123,9 +125,8 @@ h1 {
 
 .form_group input,
 .form_group select {
-    width: 528px;
     height: 40px;
-    padding-left: 16px;
+    padding-left: 4%;
     border-radius: 8px;
     border: 1px solid var(--cor-borda);
     outline: none;
@@ -158,12 +159,11 @@ h1 {
     color: #a8a29e;
     font-family: Arial, sans-serif;
     text-align: center;
-    width: 528px;
+    width: 100%;   
 }
 
 .upload-label img {
-    width: 40px;
-    height: 40px;
+    width: 20%;
     opacity: 0.5;
 }
 
@@ -184,7 +184,7 @@ h1 {
 
 
 .form_group_2 {
-    margin-left: 20px;
+    margin-left: 25px;
     color: var(--cor-fonte-secundaria);
 }
 
@@ -196,7 +196,7 @@ h1 {
 .form_group_1 input {
     display: flex;
     flex-direction: column;
-    width: 332px;
+    width: 180%;
     height: 40px;
     padding-left: 16px;
     border-radius: 8px;
@@ -208,12 +208,17 @@ h1 {
 .form_group_2 select,
 .form_group_2 input {
     display: flex;
-    width: 176px;
+    width: 110%;
     height: 40px;
     padding-left: 16px;
+    margin-left: 70%;
     border-radius: 8px;
     border: 1px solid var(--cor-borda);
     color: var(--cor-fonte-primaria);
+}
+
+.form_group_2 label{
+    margin-left: 80%;
 }
 
 .container {
@@ -275,8 +280,8 @@ h1 {
 }
 
 .termos-container input {
-    width: 24px;
-    height: 24px;
+    width: 5%;
+    
 }
 
 .termos-container a {
@@ -290,7 +295,7 @@ h1 {
     gap: 16px;
     margin-top: 64px;
     justify-content: end;
-    width: 528px;
+    width: 100%;
 }
 
 .botao {
@@ -299,6 +304,7 @@ h1 {
     border-radius: 8px;
     cursor: pointer;
     font-family: var(--fonte-principal);
+    
 }
 
 .botao.cancelar {
